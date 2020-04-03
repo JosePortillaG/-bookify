@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BOOKIFY💚 
  
 ## Proyecto en desarrollo 
@@ -14,3 +15,6 @@ Hicimos una encuesta express (en 3-4 días) para recavar datos del público al q
 -  
 
 **Este Readme.md esta en proceso** 
+=======
+# bookpodemosaprender
+>>>>>>> fdde7073f268fcfd997fb5930a779ec65f255e09
