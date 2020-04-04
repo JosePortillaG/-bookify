@@ -1,0 +1,31 @@
+<div class="container">
+  <form *ngIf="!submited" [formGroup]="form" (ngSubmit)="formSubmit()">
+    <mat-form-field>
+      <mat-label>Genero</mat-label>
+      <mat-select formControlName="genero">
+        <mat-option value="fantasia">Fantasia epica</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Extension</mat-label>
+      <mat-select formControlName="extension">
+        <mat-option value="novela">novela</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Autores de referencia</mat-label>
+      <textarea rows="8" cols="50" matInput formControlName="autores"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Descripcion del libro</mat-label>
+      <textarea rows="8" cols="50" matInput formControlName="descripcion"></textarea>
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary" style="padding: 10px; font-size: 20px; font-weight: bold">Enviar</button>
+  </form>
+  <div *ngIf="submited" class="submited">
+    <h1>Ya subimos tu pedido</h1>
+    <h3>MIentras esperas, te invitamos a <b routerLink="">compartir recomendaciones</b></h3>
+  </div>
+  <app-mobile-nav></app-mobile-nav>
+</div>
+

@@ -1,0 +1,47 @@
+.container{
+  box-sizing: content-box;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 30px;
+  background-color: #5853d3;
+  height: 100vh;
+}
+
+h5{
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 100px;
+}
+
+h1{
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+h3{
+  font-size: 24px;
+  line-height: 35px;
+  color: white;
+  font-weight: 500;
+  margin: 0 auto;
+  margin-bottom: 130px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  button {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 500;
+    width: 300px;
+    &:first-of-type{
+      margin-bottom: 20px;
+    }
+  }
+}

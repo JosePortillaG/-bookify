@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="options">
+    <h1 (click)="active = 'ficcion'" [class.active]="active==='ficcion'">Ficcion</h1>
+    <h1 (click)="active = 'noficcion'" [class.active]="active==='noficcion'">No Ficcion</h1>
+  </div>
+  <!-- Ficcion -->
+  <div class="card-container" *ngIf="active === 'ficcion'">
+    <app-rec-card [reco]="reco" *ngFor="let reco of recos"></app-rec-card>
+    <app-rec-card [reco]="reco" *ngFor="let reco of recos"></app-rec-card>
+  </div>
+  <!-- No Ficcion -->
+  <div class="card-container" *ngIf="active === 'noficcion'">
+    <app-rec-card [reco]="reco" *ngFor="let reco of recos"></app-rec-card>
+  </div>
+</div>
+<app-mobile-nav></app-mobile-nav>

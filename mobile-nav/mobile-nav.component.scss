@@ -1,0 +1,34 @@
+.container{
+  background-color: #41489F;
+  width: 100%;
+  height: 82px;
+  position: fixed;
+  bottom: 0;
+}
+
+.icons{
+  padding: 14px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  h1 {
+    margin: 0;
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.circle{
+  background-color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+}

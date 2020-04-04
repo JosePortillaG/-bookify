@@ -1,0 +1,22 @@
+<div class="container" [ngStyle]="{'background-color': !submited ? color : '#6C74C5'}">
+  <div class="inner" *ngIf="!submited">
+    <div class="title">Fantasia Epica</div>
+    <p><span class="sub">Extension:</span> Novela</p>
+    <p><span class="sub">Autores de referencia:</span> Tolkien, Margaret Weis, Tracy Hickman </p>
+    <p><span class="sub">Descripcion del libro:</span> Dragones, espadas, peleas y sexo.</p>
+    <form [formGroup]="form">
+      <p style="font-weight: bold">Sugerencia:</p>
+      <mat-form-field>
+        <textarea rows="8" cols="50" matInput formControlName="sugerencia"></textarea>
+      </mat-form-field>
+      <button (click)="submit()" mat-raised-button color="primary" style="padding: 10px; font-size: 20px; font-weight: bold">Enviar</button>
+    </form>
+  </div>
+  <div *ngIf="submited" class="submited">
+    <div style="margin-top: -100px;">
+      <h1 style="color: white; font-size: 30px">Gracias</h1>
+      <p>Ya le mandamos tu sugerencia a _nombredeusuario_</p>
+    </div>
+  </div>
+  <app-mobile-nav></app-mobile-nav>
+</div>
