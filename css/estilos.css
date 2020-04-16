@@ -1,0 +1,49 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.icon-menu{
+  font-size: 16px;
+  color: black;
+}
+.container{
+  background:#6c74c5;;
+  display: grid;
+  grid-template: 100px 1fr 150px / 0px 1fr; 
+  grid-gap: 10px;
+  grid-template-areas: 'header header'
+                       '. contenido'
+                       'footer footer' ;
+}
+.item{
+ 
+  padding: 10px;
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+.header{
+  grid-area: header;
+}
+
+.contenido{
+  grid-area: contenido;
+  text-align: center;
+  font-size: 2em;
+}
+.footer{
+  grid-area: footer;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+    
+}
+.footer button{
+  color: #edeef6;
+  font-size: 20px;
+  background:#41489f;
+  margin: 5px;
+  border-radius: 5px;
+}
