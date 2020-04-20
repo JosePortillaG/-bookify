@@ -2,6 +2,23 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   
 }
+.icon-mail:before {
+  content: "\e900";
+  font-size: 32px;
+ 
+}
+.icon-menu:before {
+  content: "\e901";
+  font-size: 32px;
+}
+
+.header span{
+  color: black;
+  background: #41489f;
+  width: 20px;
+  height: 20px;
+  
+}
 .icon-menu{
   font-size: 16px;
   color: black;
@@ -18,7 +35,6 @@ body{
 .item{
  
   padding: 10px;
-  border: 1px solid black;
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -40,10 +56,93 @@ body{
   justify-content: center;
     
 }
-.footer button{
-  color: #edeef6;
-  font-size: 20px;
-  background:#41489f;
-  margin: 5px;
-  border-radius: 5px;
+.footer a{
+    background: #41489f;
+    border-radius: 5px;
+    border: 1px solid #41489f;
+    color: #edeef6;
+    vertical-align: inherit;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+.header-generos{
+  display: grid ;
+  grid-template-columns: minmax(auto, 1024px);
+  justify-content: center;
+  padding: 32px 15px;
+  background: #edeef6;
+  text-align: center;
+  
+}
+
+.header-generos-menu{ 
+  justify-content: center;
+  margin: 25px;
+  
+}
+.header-generos-menu a{
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 2px solid #edeef6;
+  margin: 15px;
+  padding-left: 33px;
+}
+.contenido-generos{
+  display: inline-grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+/* .item-left{
+  border: 1px solid black;
+  background: #65db6f;
+}
+.item-right{
+  border: 1px solid black;
+  background: #6597db;
+} */
+.item-left1{
+  border: 1px solid black;
+  background: #65db6f;
+  color: white;
+}
+
+.item-left2{
+  border: 1px solid black;
+  background: black;
+  color: white;
+}
+.item-left3{
+  border: 1px solid black;
+  background: #6597db;
+  color: white;
+}
+.item-left4{
+  border: 1px solid black;
+  background: #727272;
+  color: white;
+}
+.item-right1{
+  border: 1px solid black;
+  background: #ce6262;
+  color: white;
+}
+
+.item-right2{
+  border: 1px solid black;
+  background: #e0b62b;
+  color: white;
+}
+.item-right3{
+  border: 1px solid black;
+  background: #65db6f;
+  color: white;
+}
+.item-right4{
+  border: 1px solid black;
+  background: black;
+  color: white;
+}
+.footer-menu{
+  background: #41489f;
+  height: 100px;
 }
