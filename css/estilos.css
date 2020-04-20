@@ -80,12 +80,17 @@ body{
   margin: 25px;
   
 }
+
 .header-generos-menu a{
   font-size: 32px;
   font-weight: bold;
   border-bottom: 2px solid #edeef6;
   margin: 15px;
   padding-left: 33px;
+}
+.contenido-generos h2{
+  border-bottom: 2px solid white;
+  display: initial;
 }
 .contenido-generos{
   display: inline-grid;
@@ -104,43 +109,51 @@ body{
   border: 1px solid black;
   background: #65db6f;
   color: white;
+  padding: 10px 0;
 }
 
 .item-left2{
   border: 1px solid black;
   background: black;
   color: white;
+  padding: 10px 0;
 }
 .item-left3{
   border: 1px solid black;
   background: #6597db;
   color: white;
+  padding: 10px 0;
 }
 .item-left4{
   border: 1px solid black;
   background: #727272;
   color: white;
+  padding: 10px 0;
 }
 .item-right1{
   border: 1px solid black;
   background: #ce6262;
   color: white;
+  padding: 10px 0;
 }
 
 .item-right2{
   border: 1px solid black;
   background: #e0b62b;
   color: white;
+  padding: 10px 0;
 }
 .item-right3{
   border: 1px solid black;
   background: #65db6f;
   color: white;
+  padding: 10px 0;
 }
 .item-right4{
   border: 1px solid black;
   background: black;
   color: white;
+  padding: 10px 0;
 }
 .footer-menu{
   background: #41489f;
